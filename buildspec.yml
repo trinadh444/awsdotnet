@@ -10,7 +10,7 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - dotnet publish -c release -o ./build_output WebAppForCICD/WebAppForCICD.csproj
+      - dotnet publish -c release -o build_output WebAppForCICD/WebAppForCICD.csproj
 artifacts:
   files:
-    - awsdotnet/build_output/
+    - awsdotnet/WebAppForCICD/build_output
