@@ -13,4 +13,4 @@ phases:
       - dotnet publish -c release -o build_output WebAppForCICD/WebAppForCICD.csproj
 artifacts:
   files:
-    - awsdotnet/build_output
+    - build_output
