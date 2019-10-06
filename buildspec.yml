@@ -6,8 +6,8 @@ phases:
   pre_build:
     commands:
       - echo Restore started on `date`
-      - dotnet restore awsdotnet/WebAppForCICD/WebAppForCICD.csproj
+      - dotnet restore WebAppForCICD/WebAppForCICD.csproj
   build:
     commands:
       - echo Build started on `date`
-      - dotnet publish -c release -o ./build_output awsdotnet/WebAppForCICD/WebAppForCICD.csproj
+      - dotnet publish -c release -o ./build_output WebAppForCICD/WebAppForCICD.csproj
